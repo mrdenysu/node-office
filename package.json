@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "author": "Pilesky Denis <mrdenysu@vk.com>",
   "license": "MIT",
+  "repository": "git@github.com:mrdenysu/node-office.git",
   "dependencies": {
     "jsdom": "^20.0.0",
     "mammoth": "^1.4.21",
