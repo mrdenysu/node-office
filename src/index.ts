@@ -1,7 +1,4 @@
-import {readFile} from "fs/promises"
-
-console.log(readFile)
-
-export default function test() {
-    console.log("test")
+export default async function main() {
+    console.log("In development!")
+    console.error("Dont work now!")
 }

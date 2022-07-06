@@ -1,6 +1,7 @@
 {
   "name": "node-office",
   "version": "0.0.1",
+  "description": "Generation of PDF documents from HTML, EJS. Docx to html conversion functions. Using templates for documents",
   "main": "dist/index.js",
   "author": "Pilesky Denis <mrdenysu@vk.com>",
   "license": "MIT",
