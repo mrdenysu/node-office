@@ -1,6 +1,6 @@
 {
   "name": "agility-node-office",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Generation of PDF documents from HTML, EJS. Docx to html conversion functions. Using templates for documents",
   "author": "Pilesky Denis <mrdenysu@vk.com>",
   "license": "MIT",
