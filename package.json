@@ -2,10 +2,21 @@
   "name": "agility-node-office",
   "version": "0.0.1",
   "description": "Generation of PDF documents from HTML, EJS. Docx to html conversion functions. Using templates for documents",
-  "main": "dist/index.js",
   "author": "Pilesky Denis <mrdenysu@vk.com>",
   "license": "MIT",
   "repository": "git@github.com:mrdenysu/node-office.git",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build:lib": "node ./build.js",
+    "build:types": "rm -r types && tsc --emitDeclarationOnly --outdir types",
+    "build": "npm run build:lib && npm run build:types",
+    "prepublish": "rpm run build",
+    "example": "node example/index.js"
+  },
   "dependencies": {
     "jsdom": "^20.0.0",
     "mammoth": "^1.4.21",
@@ -13,6 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
+    "esbuild": "^0.14.48",
     "typescript": "^4.7.4"
   }
 }
